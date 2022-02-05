@@ -86,6 +86,141 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* BASE CODE FOR HEADER AND FOOTER */
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* HEADER AREA STYLING GUIDE */
+header {
+  background-color: #f7e8e3;
+}
+
+header .logo {
+}
+
+header .header-divider {
+}
+
+/* Navigation Menu Section */
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul li {
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+/* MAIN AREA STYLING GUIDE */
+.cover-image,
+.form-section,
+.features,
+.reviews {
+  margin: 0 15px;
+  padding: 0;
+}
+
+/**** Title Image Section ***/
+.cover-image {
+  background-color: #d1dcde;
+}
+
+/**** Form Section ***/
+.form-section {
+  background-color: #f7e8e3;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 15px;
+}
+
+.form-section h3 {
+  margin: 5px 0px;
+}
+
+.button {
+  width: 80%;
+  margin: 10px 0px;
+}
+
+/**** Features Section ****/
+.features {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: #d1dcde;
+  margin: 15px;
+}
+
+.features .features-items {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.features .features-items p {
+  text-align: center;
+  padding: 0px 100px;
+}
+
+/**** Reviews Section ****/
+.reviews {
+  background-color: #f7e8e3;
+  margin: 0px 15px;
+}
+
+/* FOOTER SECTION STYLING GUIDE */
+footer {
+  background-color: #d1dcde;
+  margin: 0px 15px;
+}
+
+footer .contact {
+  text-align: center;
+  width: 100%;
+}
+
+footer .social {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social .social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .social .social-icons p {
+  text-align: center;
+  flex-basis: 30%;
+}
+
+footer .copyright {
+  text-align: center;
+  width: 100%;
+}
+
 
 /* ==========================================================================
    Helper classes
