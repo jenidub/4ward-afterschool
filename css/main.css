@@ -517,7 +517,18 @@ section {
   }
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+  /* ============== HOME PAGE ============== */
+  .features .features-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+  }
+
+  .features .column-1,
+  .features .column-2 {
+    display: flex;
+    flex-flow: row;
+  }
 }
 
 /* ==========================================================================
