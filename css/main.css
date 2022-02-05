@@ -86,18 +86,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* BASE CODE FOR HEADER AND FOOTER */
+
+/* ============== HOME PAGE ============== */
+   /* BASE CODE FOR HEADER AND FOOTER */
 header, 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 /* HEADER AREA STYLING GUIDE */
 header {
-  background-color: #f7e8e3;
+  flex-flow: column wrap;
 }
 
 header .logo {
@@ -126,32 +127,38 @@ header nav ul li {
 }
 
 /* MAIN AREA STYLING GUIDE */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .cover-image,
 .form-section,
 .features,
 .reviews {
-  margin: 0 15px;
   padding: 0;
   width: 90%
 }
 
 /**** Title Image Section ***/
 .cover-image {
-  background-color: #d1dcde;
+}
+
+.cover-image h1 {
+  margin: 0px;
 }
 
 /**** Form Section ***/
 .form-section {
-  background-color: #f7e8e3;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 0px 15px;
 }
 
 .form-section h3 {
-  margin: 5px 0px;
 }
 
 /*.button {
@@ -164,8 +171,6 @@ header nav ul li {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background-color: #d1dcde;
-  margin: 15px;
 }
 
 .features .features-items {
@@ -175,6 +180,8 @@ header nav ul li {
 }
 
 .features .features-items h2 {
+  display: flex;
+  padding: 0px;
   width: 90%;
 }
 
@@ -186,24 +193,29 @@ header nav ul li {
 
 /**** Reviews Section ****/
 .reviews {
-  background-color: #f7e8e3;
-  margin: 0px 15px;
   width: 90%;
 }
 
-.reviews h3 {
+.reviews .reviews-content {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews .reviews-header h2 {
+  margin: 0px;
+}
+
+.reviews .reviews-info h3 {
   width: 50%;
 }
 
 /* FOOTER SECTION STYLING GUIDE */
 footer {
-  background-color: #d1dcde;
-  margin: 0px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column wrap;
+  align-items: center;
   width: 55%;
+  margin: 0px 35px;
 }
 
 footer .contact {
@@ -234,6 +246,40 @@ footer .copyright {
   text-align: center;
 }
 
+/* ============== ABOUT US PAGE ============== */
+section {
+  margin: 10px 0px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-flow: column;
+}
+
+.mission-content p {
+  width: 90%;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%
+}
+
+/* ============== FAQs PAGE ============== */
+.faqs h2 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqs-items {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
 
 /* ==========================================================================
    Helper classes
@@ -323,15 +369,155 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/*Tablet styles here*/
+@media only screen and (min-width: 768px) {
+  /* ============== HOME PAGE ============== */
+  /* Navigation Menu Section */
+  header {
+    flex-flow: row wrap;
+  }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  header nav,
+  header .logo {
+    flex-direction: row;
+    width: 40%;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul li {
+    flex-basis: 50%;
+    justify-content: space-between;
+  }
+
+  /* Cover Image Section */
+  .cover-image {
+    width: 85%;
+    margin: 0px 50px;
+  }
+
+  /**** Form Section ***/
+  .form-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0px;
+  }
+
+  .form-description,
+  .form {
+    width: 40%;
+  }
+
+  .form-section h3 {
+    margin: 5px 0px;
+  }
+
+  /**** Features Section ****/
+  .features {
+    width: 85%;
+  }
+
+   .features .features h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .features .features-items {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+  }
+
+  .features .column-1,
+  .features .column-2 {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .features .features-items-description,
+  .features .features-items-description p {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .features article {
+    padding: 0px;
+  }
+
+  /**** Reviews Section ****/
+  .reviews {
+    flex-flow: column wrap;
+  }
+
+  .reviews .reviews-content {
+    display: flex;
+  }
+
+  .reviews .reviews-content .reviews-img,
+  .reviews .reviews-content .reviews-info {
+    flex-basis: 40%;
+  }
+
+  /**** Footer Section ****/
+  footer {
+    flex-direction: column;
+    padding: 25px;
+    width: 85%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-content .contact,
+  .footer-content .social {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .footer-content .contact {
+    margin-right: 100px;
+  }
+
+  .footer-content .social .social-icons {
+    flex-direction: row;
+  }
+
+  /* ============== ABOUT PAGE ============== */
+  .contact-info {
+    flex-flow: row wrap;
+    width: 85%
+  }
+
+  .contact-info h2 {
+    width: 100%;
+  }
+
+  .contact-info .general-info,
+  .contact-info .office-hours {
+    flex-basis: 50%;
+  }
+
+  /* ============== FAQs PAGE ============== */
+  .faqs-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 /* ==========================================================================
