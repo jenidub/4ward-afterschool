@@ -132,7 +132,7 @@ img {
 }
 
 figure {
-
+  width: 100%;
 }
 
 address {
@@ -195,15 +195,21 @@ main {
 .features,
 .reviews {
   padding: 0;
-  width: 90%
+  width: 100%;
 }
 
 /**** Title Image Section ***/
 .cover-image {
+  background: url('../img/4ward-lightbulb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
 }
 
 .cover-image h1 {
   margin: 0px;
+  padding: 50px;
 }
 
 .cover-image img {
@@ -251,6 +257,11 @@ input[type=button] {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  background: url('../img/4ward-features-ocean.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
 }
 
 .features .features-items {
