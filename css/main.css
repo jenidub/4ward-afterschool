@@ -128,11 +128,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-  width: 100%;
+  margin: 0;
 }
 
 address {
@@ -149,7 +149,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #202322;
 }
 
 /* HEADER AREA STYLING GUIDE */
@@ -165,7 +164,11 @@ header .header-divider {
 
 /* Navigation Menu Section */
 header nav {
-  width: 60%;
+  width: 100%;
+  background-color: #202322;
+}
+
+header .logo {
 }
 
 header nav ul {
@@ -180,6 +183,15 @@ header nav ul {
 header nav ul li {
   flex-basis: 50%;
   justify-content: space-between;
+}
+
+header figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #fff;
 }
 
 /* MAIN AREA STYLING GUIDE */
@@ -257,11 +269,8 @@ input[type=button] {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background: url('../img/4ward-features-ocean.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0px;
+  margin: 10px;
+  background-color: #000;
 }
 
 .features .features-items {
@@ -272,7 +281,6 @@ input[type=button] {
 
 .features .features-items h2 {
   display: flex;
-  padding: 0px;
   width: 90%;
 }
 
@@ -308,6 +316,7 @@ footer {
   align-items: center;
   margin: 0px;
   width: 100%;
+  background-color: #202322;
 }
 
 footer .contact {
@@ -344,6 +353,11 @@ section {
   justify-content: center;
   align-items: center; 
   flex-flow: column;
+  background-color: #527158;
+}
+
+.map {
+  background-color: #000;
 }
 
 .mission-content p {
@@ -353,10 +367,15 @@ section {
 .contact-info {
   display: flex;
   flex-flow: column wrap;
-  width: 90%
+  width: 90%;
+  background-color: #2a423a;
 }
 
 /* ============== FAQs PAGE ============== */
+.faqs {
+  background-color: #527158;
+}
+
 .faqs h2 {
   flex-flow: column;
   justify-content: center;
@@ -463,6 +482,7 @@ section {
   /* Navigation Menu Section */
   header {
     flex-flow: row wrap;
+    background-color: #202322;
   }
 
   header nav,
@@ -581,7 +601,7 @@ section {
     flex-direction: row;
   }
 
-  /* ============== ABOUT PAGE ============== */
+  /* ============== ABOUT PAGE ============== */  
   .contact-info {
     flex-flow: row wrap;
     width: 85%
