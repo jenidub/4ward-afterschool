@@ -628,6 +628,10 @@ section {
     flex-basis: 50%;
   }
 
+  .map figure {
+    padding-bottom: 47%; 
+  }
+
   /* ============== FAQs PAGE ============== */
   .faqs-items {
     display: flex;
@@ -648,6 +652,12 @@ section {
     display: flex;
     flex-flow: row;
   }
+
+  /* ============== ABOUT PAGE ============== */  
+  .map figure {
+    padding-bottom: 37.5%; 
+  }
+
 }
 
 /* ==========================================================================
