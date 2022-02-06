@@ -91,6 +91,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -148,6 +149,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #202322;
 }
 
 /* HEADER AREA STYLING GUIDE */
@@ -204,21 +206,45 @@ main {
   margin: 0px;
 }
 
+.cover-image img {
+}
+
 /**** Form Section ***/
 .form-section {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
+  background-color: #527158;
+  width: 100%;
 }
 
-.form-section h3 {
+.form-section .form {
 }
-
-/*.button {
-  width: 80%;
-  margin: 10px 0px;
-}*/
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /**** Features Section ****/
 .features {
@@ -247,7 +273,8 @@ main {
 
 /**** Reviews Section ****/
 .reviews {
-  width: 90%;
+  width: 100%;
+  background-color: #2a423a;
 }
 
 .reviews .reviews-content {
@@ -268,7 +295,8 @@ main {
 footer {
   flex-flow: column wrap;
   align-items: center;
-  margin: 0px 35px;
+  margin: 0px;
+  width: 100%;
 }
 
 footer .contact {
@@ -519,7 +547,6 @@ section {
   footer {
     flex-direction: column;
     padding: 25px;
-    width: 85%;
   }
 
   .footer-content {
