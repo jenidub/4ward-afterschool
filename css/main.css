@@ -340,9 +340,11 @@ footer .social .social-icons {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
 }
 
-footer .social .social-icons p {
+footer .social .social-icons i {
+  font-size: 1.25em;
 }
 
 footer .copyright {
