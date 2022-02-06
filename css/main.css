@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -86,6 +80,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* ============== GLOBAL STYLES ============== */
+html {
+  color: #222;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #e2e3ed;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 1.875rem;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 0.5em;
+}
+
 
 /* ============== HOME PAGE ============== */
    /* BASE CODE FOR HEADER AND FOOTER */
@@ -214,7 +268,6 @@ main {
 footer {
   flex-flow: column wrap;
   align-items: center;
-  width: 55%;
   margin: 0px 35px;
 }
 
@@ -224,7 +277,7 @@ footer .contact {
 
 footer .social {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -232,14 +285,11 @@ footer .social {
 footer .social .social-icons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 footer .social .social-icons p {
-  text-align: center;
-  flex-flow: row wrap;
-  margin: 2px;
 }
 
 footer .copyright {
@@ -248,7 +298,6 @@ footer .copyright {
 
 /* ============== ABOUT US PAGE ============== */
 section {
-  margin: 10px 0px;
 }
 
 .mission {
