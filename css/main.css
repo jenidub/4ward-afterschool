@@ -410,15 +410,17 @@ footer .copyright {
 }
 
 /* ============== ABOUT US PAGE ============== */
-section {
-}
-
 .mission {
   display: flex;
   justify-content: center;
   align-items: center; 
-  flex-flow: column;
+  flex-flow: column wrap;
   background-color: #527158;
+}
+
+.mission-content {
+  width: 90%;
+  margin-bottom: 10px;
 }
 
 .map figure {
@@ -437,32 +439,46 @@ section {
   left: 0; 
 }
 
-.mission-content p {
-  width: 90%;
-}
-
 .contact-info {
   display: flex;
   flex-flow: column wrap;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
   background-color: #2a423a;
+}
+
+.contact-info h2 {
+  width: 90%;
+}
+
+.contact-info .contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 25px;
 }
 
 /* ============== FAQs PAGE ============== */
 .faqs {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #527158;
+  padding-bottom: 20px;
 }
 
 .faqs h2 {
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  width: 90%
 }
 
 .faqs-items {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
+  width: 90%;
 }
 
 /* ==========================================================================
@@ -711,11 +727,9 @@ section {
   /* ============== ABOUT PAGE ============== */  
   .contact-info {
     flex-flow: row wrap;
-    width: 85%
   }
 
   .contact-info h2 {
-    width: 100%;
   }
 
   .contact-info .general-info,
@@ -728,10 +742,33 @@ section {
   }
 
   /* ============== FAQs PAGE ============== */
+  .faqs {
+    padding: 50px;
+  }
+
+  .faqs h2 {
+    font-size: 2.25rem;
+  }
+  
   .faqs-items {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0px 50px 50px 50px;
+  }
+
+  .faqs-items .faqs-column-1,
+  .faqs-items .faqs-column-2 {
+    width: 45%;
+  }
+
+  .faqs-items h3 {
+    margin 10px 0px;
+  }
+
+  .faqs-items p {
+    line-height: 1.125rem;
   }
 
 @media only screen and (min-width: 1200px) {
@@ -815,7 +852,23 @@ section {
     padding-bottom: 37.5%; 
   }
 
-}
+  /* ============== FAQs PAGE ============== */
+  .faqs h2 {
+    font-size: 3rem;
+  }
+
+  .faqs-items h3,
+  .faqs-items p {
+    font-size: 1.125rem;
+    line-height: 1.125em;
+  }
+  .faqs-items h3 {
+    margin: 10px 0px;
+  }
+
+  .faqs-items p {
+    margin: 25px 0px;
+  }
 
 /* ==========================================================================
    Print styles.
