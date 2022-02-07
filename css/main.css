@@ -292,7 +292,7 @@ input[type=button] {
 }
 
 .features h2 {
-  padding-left: 30px;
+  padding: 0px 30px;
 }
 
 .features .features-items {
@@ -458,6 +458,12 @@ footer .copyright {
   align-items: center;
   width: 90%;
   padding-bottom: 25px;
+}
+
+.contact-info .contact-container .general-info address p,
+.contact-info .contact-container .office-hours address p {
+  overflow-wrap: normal;
+  line-height: 1.125rem;
 }
 
 /* ============== FAQs PAGE ============== */
@@ -737,6 +743,10 @@ footer .copyright {
     flex-basis: 50%;
   }
 
+  .contact-info .office-hours {
+    padding-bottom: 45px;
+  }
+
   .map figure {
     padding-bottom: 47%; 
   }
@@ -850,6 +860,26 @@ footer .copyright {
   /* ============== ABOUT PAGE ============== */  
   .map figure {
     padding-bottom: 37.5%; 
+  }
+
+  .mission h2 {
+    font-size: 3rem;
+  }
+
+  .mission p {
+    font-size: 1.125rem;
+  }
+
+  .contact-info h2 {
+    font-size: 3rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.875rem;
+  }
+
+  .contact-info p {
+    font-size: 1.125rem;
   }
 
   /* ============== FAQs PAGE ============== */
